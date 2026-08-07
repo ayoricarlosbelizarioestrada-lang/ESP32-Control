@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control ESP32</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
-    <div class="contenedor">
+<div class="card">
 
-        <h1>🌐 Control ESP32</h1>
+<h1>ESP32 Control Panel</h1>
 
-        <p id="estado">
-            Estado del LED:
-            <span>🔴 Apagado</span>
-        </p>
+<div class="estado">
 
-        <button id="btnOn">🟢 Encender</button>
+<h2>ESP32</h2>
 
-        <button id="btnOff">🔴 Apagar</button>
+<p id="esp32">Desconectado</p>
 
-        <p id="conexion">
-            ESP32: ⚪ Desconectado
-        </p>
+</div>
 
-    </div>
+<div class="estado">
 
-<script src="script.js"></script>
+<h2>LED</h2>
+
+<p id="led">Apagado</p>
+
+</div>
+
+<button id="on">
+
+Encender
+
+</button>
+
+<button id="off">
+
+Apagar
+
+</button>
+
+</div>
 
 </body>
-</html>
