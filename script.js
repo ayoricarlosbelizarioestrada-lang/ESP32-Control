@@ -1,11 +1,13 @@
-document.getElementById("btnOn").onclick=function(){
+const led = document.getElementById("led");
 
-    document.querySelector("#estado span").innerHTML="🟢 Encendido";
+document.getElementById("btnOn").onclick = function () {
+
+    led.innerHTML = "🟢 Encendido";
 
 }
 
-document.getElementById("btnOff").onclick=function(){
+document.getElementById("btnOff").onclick = function () {
 
-    document.querySelector("#estado span").innerHTML="🔴 Apagado";
+    led.innerHTML = "🔴 Apagado";
 
 }
