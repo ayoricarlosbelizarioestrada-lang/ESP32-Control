@@ -1,37 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESP32 Control Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
 <body>
 
-<div class="card">
+    <div class="container">
 
-<h1>ESP32 Control Panel</h1>
+        <div class="card">
 
-<div class="estado">
+            <h1>ESP32 Control Panel</h1>
 
-<h2>ESP32</h2>
+            <p class="subtitulo">
+                Control remoto mediante Internet
+            </p>
 
-<p id="esp32">Desconectado</p>
+            <div class="status">
 
-</div>
+                <h3>Estado del ESP32</h3>
 
-<div class="estado">
+                <p id="esp32">
+                    ⚪ Desconectado
+                </p>
 
-<h2>LED</h2>
+            </div>
 
-<p id="led">Apagado</p>
+            <div class="status">
 
-</div>
+                <h3>Estado del LED</h3>
 
-<button id="on">
+                <p id="led">
+                    🔴 Apagado
+                </p>
 
-Encender
+            </div>
 
-</button>
+            <div class="botones">
 
-<button id="off">
+                <button id="btnOn">
 
-Apagar
+                    🟢 Encender
 
-</button>
+                </button>
 
-</div>
+                <button id="btnOff">
+
+                    🔴 Apagar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
 
 </body>
+
+</html>
