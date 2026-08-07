@@ -10,15 +10,26 @@
 
 <body>
 
-    <h1>Control del ESP32</h1>
+    <div class="contenedor">
 
-    <p id="estado">Estado del LED: Apagado</p>
+        <h1>🌐 Control ESP32</h1>
 
-    <button id="btnOn">🟢 Encender</button>
+        <p id="estado">
+            Estado del LED:
+            <span>🔴 Apagado</span>
+        </p>
 
-    <button id="btnOff">🔴 Apagar</button>
+        <button id="btnOn">🟢 Encender</button>
 
-    <script src="script.js"></script>
+        <button id="btnOff">🔴 Apagar</button>
+
+        <p id="conexion">
+            ESP32: ⚪ Desconectado
+        </p>
+
+    </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
