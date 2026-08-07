@@ -3,67 +3,63 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ESP32 Control Panel</title>
+<title>ESP32 Control Panel</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="card">
+    <div class="card">
 
-            <h1>ESP32 Control Panel</h1>
+        <h1>ESP32 Control Panel</h1>
 
-            <p class="subtitulo">
-                Control remoto mediante Internet
+        <p class="subtitulo">
+            Control remoto mediante Internet
+        </p>
+
+        <div class="status">
+
+            <h3>Estado del ESP32</h3>
+
+            <p id="esp32">
+                ⚪ Desconectado
             </p>
 
-            <div class="status">
+        </div>
 
-                <h3>Estado del ESP32</h3>
+        <div class="status">
 
-                <p id="esp32">
-                    ⚪ Desconectado
-                </p>
+            <h3>Estado del LED</h3>
 
-            </div>
+            <p id="led">
+                🔴 Apagado
+            </p>
 
-            <div class="status">
+        </div>
 
-                <h3>Estado del LED</h3>
+        <div class="botones">
 
-                <p id="led">
-                    🔴 Apagado
-                </p>
+            <button id="btnOn">
+                🟢 Encender
+            </button>
 
-            </div>
-
-            <div class="botones">
-
-                <button id="btnOn">
-
-                    🟢 Encender
-
-                </button>
-
-                <button id="btnOff">
-
-                    🔴 Apagar
-
-                </button>
-
-            </div>
+            <button id="btnOff">
+                🔴 Apagar
+            </button>
 
         </div>
 
     </div>
+
+</div>
 
 <script src="script.js"></script>
 
